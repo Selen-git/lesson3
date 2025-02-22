@@ -1,16 +1,15 @@
 class Adress:
-    def init (self, index, city, street, house, apartment) :
+    def __init__(self, index, city, street, house, apartment) :
         self.index = index
         self.city = city
         self.street = street
         self.house = house
         self.apartment = apartment
+
+
 class Mailing:
-    def init (self, to_adress, from_adress, cost, track) :
+    def __init__(self, to_adress, from_adress, cost, track) :
         self.to_adress = to_adress
         self.from_adress = from_adress
         self.cost = cost
         self.track = track
-
-from adress import Adress
-from mailing import Mailing
